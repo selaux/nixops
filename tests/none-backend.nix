@@ -100,6 +100,8 @@ makeTest {
             pkgs.module_init_tools pkgs.perlPackages.ArchiveCpio
           ];
           networking.firewall.enable = false;
+
+          virtualisation.memorySize = 2048;
           virtualisation.writableStore = true;
         };
 
